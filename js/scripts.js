@@ -8,8 +8,19 @@ var reverseOrder = function(str) {
 
 var multiFunction = function(str) {
   return str + reverseOrder(cap(str));
+};
 
-}
+var function4 = function(str) {
+  return str.charAt(Math.floor(str.length / 2)) + multiFunction(str);
+};
+
+var bonus = function(function4(str)) {
+  var split = str.split("");
+  var reversedString = split.reverse();
+  var result = reversedString.join("");
+  return = result;
+};
+
 var sentence = prompt("Enter a sentence: ");
 
-alert(multiFunction(sentence));
+alert(bonus(sentence));
